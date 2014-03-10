@@ -1,6 +1,7 @@
 task main()
 {
-	boolean Safty = true;
+	boolean Safty = true;    // we added a manual safty swich on the vex remote
+	
 	if (Btn6U == true){
 	}
 
