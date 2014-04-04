@@ -1,0 +1,9 @@
+task main()
+{
+	while(true){
+		motor[port3] = vexRT[3];
+		motor[port4] = vexRT[1];
+	  motor[port5] = vexRT[1];
+
+		}
+}
