@@ -1,0 +1,34 @@
+
+void STOP(){
+	motor[LEFT] = 0;
+	motor[RIGHT] = 0;
+}
+
+void FORWARD(int TIME){
+	motor[LEFT] = 127;
+	motor[RIGHT] = 127;
+	wait1Msec(TIME);
+}
+
+void FORWARD_IN(){
+	motor[LEFT] = 127;
+	motor[RIGHT] = 127;
+}
+
+void BACKWARD(int TIME){
+  motor[LEFT] = -127;
+	motor[RIGHT] = -127;
+	wait1Msec(TIME);
+	}
+
+void BACKWARD_IN(){
+  motor[LEFT] = -127;
+	motor[RIGHT] = -127;
+	}
+
+void FOR_X_DIS(int DISTANTS){
+	while (SensorValue[ENCODER_LEFT] < DISTANTS && SensorValue[ENCODER_RIGHT] < DISTANTS){
+		motor[LEFT] = 127;
+		motor[RIGHT] = 127;
+	}
+}
